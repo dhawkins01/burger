@@ -9,6 +9,12 @@ var burger = {
         });
     },
     // insertOne:
+    insertOne: function(cols, vals, cb) {
+        orm.insertOne("burgers", cols, vals, function(res) {
+            
+          cb(res);
+        });
+      },
     // updateOne:
 }
 

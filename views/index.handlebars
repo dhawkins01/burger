@@ -5,8 +5,8 @@
 <ul>
   {{#each burgers}}
     {{#unless devoured}}
-      {{this.burger_name}}
-      <br>
+      {{> burgers/burger-block sleep=true}}
+      
     {{/unless}}
   {{/each}}
 </ul>
@@ -16,8 +16,8 @@
 <ul>
   {{#each burgers}}
     {{#if devoured}}
-      {{this.burger_name}}
-      <br>
+      {{> burgers/burger-block sleep=false}}
+      
     {{/if}}
   {{/each}}
 </ul>
