@@ -1,0 +1,38 @@
+body {
+    background-color: #34435E;
+}
+
+.jumbotron {
+    background-color: #D8D2E1;
+    font-family: 'Sirin Stencil', cursive;
+}
+form {
+    margin: 0 auto;
+    width:501px;
+}
+
+.form-inline { 
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    
+  }
+  #form {
+      display: block;
+      text-align: center;
+  }
+
+  /* Add some margins for each label */
+/* Add some margins for each label */
+.form-inline label {
+    margin: 5px 10px 5px 10px;
+  }
+
+  .form-inline button {
+    /* padding: 10px 20px; */
+    margin: 5px;
+    
+  }
+  .column {
+    background-color: #D8D2E1;
+  }
