@@ -7,7 +7,7 @@ $(".create-form").on("submit", function(event) {
 
     var newBurger = {
       name: $("#ca").val().trim(),
-      devoured: $("[name=devoured]:checked").val().trim()
+      devoured: 0
     };
     console.log(newBurger);
     // Send the POST request.
