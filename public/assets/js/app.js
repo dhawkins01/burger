@@ -37,4 +37,27 @@ $(".create-form").on("submit", function(event) {
       }
     );
   });
+
+  $(".devour").on("click", function(event) {
+      var id =$(this).data("id");
+      console.log("clicked on id: " + id);
+
+      var newSleep = $(this).data("newsleep");
+
+    var state = {
+      devoured: true
+    };
+
+    // Send the PUT request.
+    $.ajax("/api/burgers/" + id, {
+      type: "PUT",
+      data: state
+    }).then(
+      function() {
+        console.log("changed devoured to", state);
+        // Reload the page to get the updated list
+        location.reload();
+      }
+    );
+  })
 });
